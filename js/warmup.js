@@ -37,13 +37,13 @@ window.Warmup = {
       Description: show the names of the people under Isaiah
       Outcome: Joel, Della, Lurline, Aaliyah, Elisa
     */
-    showNamesForSelector("#under-isaiah-button",  "span:last-of-type");
+    showNamesForSelector("#under-isaiah-button",  "span:not(span:first)");
 
     /*
       Description: show the names of the people under Eulalia
       Outcome: Claude, Lowell
     */
-    showNamesForSelector("#under-eulalia-button", ___);
+    showNamesForSelector("#under-eulalia-button", "span:eq(\"7\"), span:eq(\"8\")");
 
     /*
       Description: values of all of the input fields of type text
